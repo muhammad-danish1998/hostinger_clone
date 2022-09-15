@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html,
 body {
   padding: 0;
@@ -23,4 +26,44 @@ a {
     color: white;
     background: black;
   }
+}
+.hb--danger:not(.hb--ghost) {
+  background-color: #fc5185;
+}
+.hb:not(.hb--ghost) {
+  border: none;
+  color: #fff;
+  /* background-color: #673de6; */
+}
+.hb--h50 {
+  min-height: 50px!important;
+}
+.hb--255 {
+  min-width: 255px!important;
+}
+.hb--header {
+  line-height: 24px;
+}
+.hb {
+  border-radius: 100px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10px 15px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 1;
+  font-weight: 800;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
